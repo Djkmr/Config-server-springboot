@@ -7,6 +7,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigServer {
+    @RequestMapping("/")
+    public String home() {
+        return "Hello World!";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(ConfigServer.class, args);
