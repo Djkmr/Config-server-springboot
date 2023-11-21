@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git: 
-          uri: 
+          uri: https://github.com/Djkmr/Config-server-springboot/tree/main/demo
+          clone-on-start: true 
